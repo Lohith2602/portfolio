@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lohith M C — Portfolio</title>
+  <meta name="description" content="Portfolio of Lohith M C — Java Full Stack developer" />
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#111827; --muted:#9ca3af; --accent:#06b6d4; --glass:rgba(255,255,255,0.04);
+      --radius:14px; --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071226 0%, #071a2a 60%);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:var(--maxw);margin:36px auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#0ea5b5,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:800;color:white;font-size:20px}
+    nav{display:flex;gap:18px;align-items:center}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:26px;align-items:center}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:18px;box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    h1{margin:6px 0 2px;font-size:32px}
+    h2{margin:6px 0;color:var(--muted);font-weight:600}
+    .badges{display:flex;gap:8px;margin-top:14px}
+    .badge{background:var(--glass);padding:8px 12px;border-radius:999px;font-weight:600;font-size:13px;color:#dbeafe}
+
+    .profile{background:linear-gradient(180deg,#081226, #0b1a33);padding:18px;border-radius:16px;text-align:center}
+    .profile img{width:100%;height:380px;object-fit:cover;border-radius:12px;display:block}
+    .profile h3{margin:12px 0 2px}
+    .links{display:flex;gap:12px;justify-content:center;margin-top:10px}
+    .social{width:44px;height:44px;border-radius:10px;display:inline-grid;place-items:center;background:var(--glass)}
+
+    /* About / Grid */
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:16px}
+    .section-title{display:flex;justify-content:space-between;align-items:center}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:10px;font-weight:600}
+
+    .projects{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+    .project{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:10px}
+    .project h4{margin:0 0 6px}
+    .meta{color:var(--muted);font-size:14px}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px;padding:20px}
+
+    /* Contact form */
+    form{display:flex;flex-direction:column;gap:12px}
+    input[type=text], input[type=tel], input[type=email], textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:12px;border-radius:8px;color:inherit}
+    input::placeholder, textarea::placeholder{color:var(--muted)}
+    .row{display:flex;gap:12px}
+    .row input{flex:1}
+    button{background:linear-gradient(90deg,var(--accent),#7c3aed);border:0;padding:12px 16px;border-radius:10px;color:#042027;font-weight:700;cursor:pointer}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .profile img{height:260px}
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">LM</div>
+        <div>
+          <div style="font-weight:800">Lohith M C</div>
+          <div style="font-size:13px;color:var(--muted)">Java Full Stack | Bengaluru</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume" title="Download resume">Resume</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">Hello, I'm</div>
+            <h1>Lohith <span style="color:var(--accent)">M C</span></h1>
+            <h2>Full Stack Developer (Java & React)</h2>
+            <div class="badges">
+              <div class="badge">Java • Hibernate • Spring</div>
+              <div class="badge">React • HTML/CSS • JS</div>
+              <div class="badge">Oracle / MySQL</div>
+            </div>
+            <p style="color:var(--muted);margin-top:14px;line-height:1.5">Computer Science graduate and Java Full Stack intern with hands-on backend experience using Java, Hibernate (JPA), and SQL. Building real-world apps and learning continuously.</p>
+            <div style="margin-top:16px;display:flex;gap:12px">
+              <a class="social" href="https://www.linkedin.com/in/lohith2602" target="_blank" rel="noopener">in</a>
+              <a class="social" href="#projects">projects</a>
+              <a class="social" href="#contact">contact</a>
+            </div>
+          </div>
+          <div style="text-align:right;min-width:180px">
+            <div style="font-size:13px;color:var(--muted)">Location</div>
+            <div style="font-weight:700">Bengaluru, India</div>
+            <div style="margin-top:12px;font-size:13px;color:var(--muted)">Email</div>
+            <div style="font-weight:700">lohith357n@gmail.com</div>
+            <div style="margin-top:12px;font-size:13px;color:var(--muted)">Phone</div>
+            <div style="font-weight:700">+91 80733 62544</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile">
+        <!-- Replace src with your photo file name -->
+        <img src="9b280b56-c14a-45f0-903d-62b6d7098cd9.jpg" alt="Lohith profile photo" onerror="this.style.filter='grayscale(20%)';this.src='https://via.placeholder.com/420x380.png?text=Your+Photo'">
+        <h3>Lohith M C</h3>
+        <div style="color:var(--muted)">Java Full Stack Intern</div>
+        <div class="links">
+          <a class="social" href="https://github.com/" target="_blank">GH</a>
+          <a class="social" href="https://www.linkedin.com/in/lohith2602" target="_blank">in</a>
+          <a class="social" href="#resume">CV</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="grid">
+      <div class="card">
+        <div class="section-title"><h3>About</h3><div style="color:var(--muted)">Education • Training</div></div>
+        <p style="color:var(--muted);line-height:1.6">I graduated with a B.Tech in Computer Science (Presidency University, Bangalore — 2025). I'm currently training as a Java Full Stack developer at Dhee Coding Labs with experience in building backend services with Java, Hibernate (JPA), and RESTful APIs plus frontend work using HTML, CSS and React.js. I enjoy building project-driven solutions such as market apps and sustainability tooling.</p>
+
+        <div style="margin-top:14px">
+          <h4>Education</h4>
+          <p class="meta">B.Tech — Computer Science and Technology, Presidency University, Bangalore — 2025 (CGPA: 6.33)</p>
+          <p class="meta">Vidya Vardhaka Polytechnic (Mechanical Engg) — Mysuru — 2022 (70.8%)</p>
+        </div>
+
+        <div style="margin-top:12px">
+          <h4>Training & Certification</h4>
+          <p class="meta">Java Full Stack Developer track — Dhee Coding Lab — May 2025 — project-based training in Java, React, and SQL.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h3>Skills</h3><div style="color:var(--muted)">Technical</div></div>
+        <div class="skill-list">
+          <div class="skill">Java</div>
+          <div class="skill">Spring Boot</div>
+          <div class="skill">Hibernate / JPA</div>
+          <div class="skill">REST APIs</div>
+          <div class="skill">React.js</div>
+          <div class="skill">HTML & CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Oracle SQL / MySQL</div>
+          <div class="skill">Git & GitHub</div>
+        </div>
+
+        <div style="margin-top:16px">
+          <h4>Languages</h4>
+          <p class="meta">English • Kannada • Hindi</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card" style="margin-top:18px">
+      <div class="section-title"><h3>Selected Projects</h3><div style="color:var(--muted)">Project highlights from training</div></div>
+      <div class="projects">
+        <div class="project">
+          <h4>KropCart</h4>
+          <div class="meta">Tech: Python, React.js, ML</div>
+          <p style="color:var(--muted);margin-top:6px">A direct market app connecting farmers and consumers — produce listings, negotiation flow and transactions. Included ML for disease detection and AI-based crop recommendations using environmental data.</p>
+        </div>
+
+        <div class="project">
+          <h4>Eco Drive</h4>
+          <div class="meta">Tech: Node.js, Flask, Python, MySQL</div>
+          <p style="color:var(--muted);margin-top:6px">Car/bike pooling app to track carbon emissions and encourage sustainable travel. I contributed backend services and integrated carbon-footprint calculation APIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="grid" style="margin-top:18px">
+      <div class="card">
+        <h3>Contact</h3>
+        <p style="color:var(--muted)">Prefer email — <strong>lohith357n@gmail.com</strong> — or use the form below.</p>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="row">
+            <input type="text" id="fname" placeholder="First name" required>
+            <input type="text" id="lname" placeholder="Last name" required>
+          </div>
+          <input type="tel" id="phone" placeholder="Phone number" pattern="[0-9]{10}" title="10 digit phone">
+          <input type="email" id="email" placeholder="Email" required>
+          <textarea id="message" rows="6" placeholder="Write your requirement" required></textarea>
+          <div style="display:flex;gap:10px">
+            <button type="submit">Send message</button>
+            <button type="reset" style="background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.04);">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Quick info</h3>
+        <p class="meta">Open to internships and junior backend/full-stack roles. Always happy to collaborate on hackathon projects or freelance builds.</p>
+        <div style="margin-top:12px">
+          <h4>Contact</h4>
+          <p class="meta">Bengaluru • +91 80733 62544 • lohith357n@gmail.com</p>
+          <a id="resume" href="#" onclick="downloadResume()" style="display:inline-block;margin-top:10px">Download Resume (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built with ❤️ • <span style="font-weight:700">Lohith M C</span> • <a href="https://www.linkedin.com/in/lohith2602" target="_blank">LinkedIn</a>
+    </footer>
+  </div>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const fname=document.getElementById('fname').value.trim();
+      const email=document.getElementById('email').value.trim();
+      if(!fname || !email){alert('Please fill required fields');return}
+      // simple client-side behaviour: open mail client with prefilled values
+      const subject = encodeURIComponent('Portfolio contact from ' + fname);
+      const body = encodeURIComponent(document.getElementById('message').value + '\n\nPhone: ' + document.getElementById('phone').value);
+      window.location.href = `mailto:lohith357n@gmail.com?subject=${subject}&body=${body}`;
+    }
+    function downloadResume(){
+      // Replace the URL below with the path to your resume file when you host the site
+      const resumeUrl = 'Resume.pdf';
+      const a=document.createElement('a');a.href=resumeUrl;a.download='Lohith_M_C_Resume.pdf';document.body.appendChild(a);a.click();a.remove();
+    }
+  </script>
+</body>
+</html>
